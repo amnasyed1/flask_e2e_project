@@ -2,3 +2,4 @@ flask
 SQLAlchemy
 python-dotenv
 sentry-sdk
+pymysql

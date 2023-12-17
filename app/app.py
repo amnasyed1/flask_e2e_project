@@ -6,12 +6,7 @@ import sentry_sdk
 
 sentry_sdk.init(
     dsn="https://127e735d2fff5cdf04c65db1d3bb20cd@o4506300835758080.ingest.sentry.io/4506408500199424",
-    # Set traces_sample_rate to 1.0 to capture 100%
-    # of transactions for performance monitoring.
     traces_sample_rate=1.0,
-    # Set profiles_sample_rate to 1.0 to profile 100%
-    # of sampled transactions.
-    # We recommend adjusting this value in production.
     profiles_sample_rate=1.0,
 )
 
@@ -69,7 +64,7 @@ def patients():
 @app.route('/error')
 def error():
     raise Exception('This is a test error for Sentry Testing')
-    
+
 if __name__ == '__main__':
     app.run(
         debug=True,

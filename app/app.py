@@ -65,8 +65,5 @@ def patients():
 def error():
     raise Exception('This is a test error for Sentry Testing')
 
-if __name__ == '__main__':
-    app.run(
-        debug=True,
-        port=8080
-    )
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)

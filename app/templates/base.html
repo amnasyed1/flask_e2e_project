@@ -25,13 +25,20 @@
     </header>
 
     <main class="p-4">
-
-        {% block content %}{% endblock %}
-
+        {% block content %}
+        <div class="text-center">
+            <h1 class="font-verdana text-3xl">Welcome to the Food Allergy Application!</h1>
+            <p><br><br></p>
+            <p class="mb-4">This application displays patient and food allergy testing data. Click on the About tab to learn more! </p>
+            <p><br><br></p>
+            <p class="mb-4"></p>
+        </div>
+        {% endblock %}
+    
     </main>
 
     <footer class="bg-purple-600 text-white p-4 mt-6">
-        <p>© 2023 My Healthcare App. All Rights Reserved.</p>
+        <p>© 2023 Amna's Healthcare App. All Rights Reserved.</p>
     </footer>
 </body>
 

@@ -7,6 +7,8 @@ The app has two pages worth of data, Patients and Allergy Testing.
 - The Patients page, displays data in a table format about patients who have previously tested positive for a food allergy to one or more of the top 9 most common food allergens that trigger an allergic reaction according to the Food Allergy, Research, & Education (FARE) organization. The table's fields are: ID, First Name, Last Name, Date of Birth, and Gender. The ID is the primary key of the table, as each patient has their own unique ID. 
 - The Allergy Testing page, displays data in a table format about the patients' allergy tests and results. Each patient listed in the Patients table was retested for a food allergy they have previously tested positive for. The fields in the Allergy Testing table are: ID, Patient ID, Test Name, Test Result, and Test Date. Each patient either had a skin prick test or blood test done to determine if they are still allergic to the allergens they had previously tested positive for. The Patient ID column is the same as the ID column in the Patients table, and the ID column in the Allergy Testing table is the ID for their tests and the test result. The primary key in the Allergy Testing table is ID, and the forigen key is Patient ID.  
 
+Screenshots of the Home, About, Patients, and Allergy Testing pages are all in the `docs` folder within the folder `screenshots`.
+
 ## Technologies Used
 
 To develop the Food Allergy App, I used the technologies listed below:

@@ -65,14 +65,9 @@ The link to my deployed Flask app is https://foodallergyapp.azurewebsites.net/. 
 ## Template of the .env File Structure
 ``````
 DB_HOST =
-
 DB_DATABASE = 
-
 DB_USERNAME = 
-
 DB_PASSWORD = 
-
 DB_PORT = 
-
 DB_CHARSET = 
 ``````

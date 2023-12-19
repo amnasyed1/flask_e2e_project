@@ -65,10 +65,16 @@ For more in-depth documentation you can visit [this link](https://learn.microsof
 The link to my deployed Flask app is https://foodallergyapp.azurewebsites.net/. You can view how the deployed app looked like as well as further information about the deployed flask in the `docs` folder within the `screenshots folder`. 
 
 ## Template of the .env file 
-
+``````
 DB_HOST =
+
 DB_DATABASE = 
+
 DB_USERNAME = 
+
 DB_PASSWORD = 
+
 DB_PORT = 
+
 DB_CHARSET = 
+``````

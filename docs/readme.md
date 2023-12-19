@@ -38,7 +38,7 @@ The web service can be deployed through various methods: locally (without Docker
 
 ### Locally:
 1. Clone the GitHub repository into your local environment by using using `git clone https://github.com/amnasyed1/flask_e2e_project.git`
-2. Next, navigate into the `app` folder in the terminal by using `cd flask_e2e_project/`.
+2. Next, navigate into the `app` folder in the terminal by `cd flask_e2e_project/`.
 3. Create a ``.env`` file and populate it with your credentials, and ensure that there is a ``.gitignore`` file in the same directory as the app.py file and .env file. The .gitignore should have ``.env`` written within the file for it to work.
 4. Finally, to run the flask app, use `python app.py`. The terminal will populate a link which may look similar to `Running on http://127.0.0.1:5000` and click it. Once, you click the link you will be directed to the Food Allergy App!
 
@@ -64,7 +64,7 @@ For more in-depth documentation you can visit [this link](https://learn.microsof
 
 The link to my deployed Flask app is https://foodallergyapp.azurewebsites.net/. You can view how the deployed app looked like as well as further information about the deployed flask in the `docs` folder within the `screenshots folder`. 
 
-## Template of the .env File Structure
+## Template of the .env file 
 ``````
 DB_HOST =
 DB_DATABASE = 

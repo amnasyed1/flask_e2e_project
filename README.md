@@ -33,14 +33,28 @@ To develop the Food Allergy App, I used the technologies listed below:
 
 - Azure - deployed the application to the cloud via Azure
 
-## Steps to Run the Web Service: Locally and Deploying it to the Cloud
+## Steps to Run the Web Service: Locally or Deploying it to the Cloud
+The web service can be deployed through various methods: locally (without Docker), locally using Docker, and deploying it to the cloud through using Azure.
 
-### Locally
+### Locally:
+1. Clone the GitHub repository into your local environment by using using `git clone https://github.com/amnasyed1/flask_e2e_project.git`
+2. Next, navigate into the `app` folder in the terminal by using `cd flask_e2e_project/`.
+3. Create a ``.env`` file and populate it with your credentials, and ensure that there is a ``.gitignore`` file in the same directory as the app.py file and .env file. The .gitignore should have ``.env`` written within the file for it to work.
+4. Finally, to run the flask app, use `python app.py`. The terminal will populate a link which may look similar to `Running on http://127.0.0.1:5000` and click it. Once, you click the link you will be directed to the Food Allergy App!
+
+### Locally using Docker:
+1. To run the flask app locally using Docker, ensure your `app` folder has both a ``Dockerfile`` and a ``docker-compose.yaml`` file.
+2. In the terminal, type `docker-compose build` to build the images within the flask apps.
+3. After that, to run the images in the containers, type `docker-compose up`.
+4. Next, to run the image `docker run -p <newport:oldport> <name of image>`
+   - "-p" is the port; if you would like to run the image on a port different from the one you exposed in the Dockerfile and documented in the app.py, then write the new port, then a colon`:` and then the old port. For example (-p 5001:5000)
+5. To preview the image, click `Web Preview`, `Change Port`, enter the new port number, for instance, utilizing the example above, type `5001` and then click `Change and Preview`, and your image will be run in a container and can be viewed without any issues.
+6. Next, in the terminal type `docker-compose ps` to see the information in a list/table structure with contents such as the container ID, image name, command, when it was created, the status, ports its exposed on etc.
+
+In the `docs` folder, within the `screenshots` folder, you can see the flask app dockerized and running on the new port 5001, as well as the docker images I created in the terminal.
+
 
 ### How to deploy it to the cloud
 
-#### How could they run it without Docker locally?
-#### How could they run it with Docker locally?
-#### How could they deploy it to the cloud?
 
 ## Template of the .env file and its structure

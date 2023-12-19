@@ -25,6 +25,8 @@ To develop the Food Allergy App, I used the technologies listed below:
 
 - SQLALchemy - ORM (Object Relational Mapper)
 
+- API service - the api endpoint is hosted within Flask's backend
+
 - Sentry.io -  a logger for tracking errors
 
 - Docker -  used to containerize the app

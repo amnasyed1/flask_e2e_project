@@ -54,7 +54,21 @@ The web service can be deployed through various methods: locally (without Docker
 In the `docs` folder, within the `screenshots` folder, you can see the flask app dockerized and running on the new port 5001, as well as the docker images I created in the terminal.
 
 
-### How to deploy it to the cloud
+### Deploy the Flask App to the Cloud (Azure):
+1. In your Google Cloud Shell terminal, install Azure CLI by typing in this command `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash` and hit enter.
+2. After that type `az login --use-device-code` to log in. After you hit enter a link will be provided with an authentication code, copy the authentication code, click the link, sign in with your emial, and paste the authentication code.
+3. Next, create a resource group. Use the command `az group create --name <create a resource group name> -- location eastus`.
+4. Lastly, to deploy the app use the command  `az webapp --resource-group <groupname> --name <app-name> --runtime <PYTHON : 3.9 > --sku <B1>`. Alternately, you can also use the following command `az webapp up --resource-group <groupname>--name <app-name> --sku F1`. 
 
+For more in-depth documentation you can visit [this link](https://learn.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest). 
 
-## Template of the .env file and its structure
+The link to my deployed Flask app is https://foodallergyapp.azurewebsites.net/. You can view how the deployed app looked like as well as further information about the deployed flask in the `docs` folder within the `screenshots folder`. 
+
+## Template of the .env file 
+
+DB_HOST =
+DB_DATABASE = 
+DB_USERNAME = 
+DB_PASSWORD = 
+DB_PORT = 
+DB_CHARSET = 
